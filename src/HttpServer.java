@@ -25,6 +25,7 @@ public class HttpServer {
             // 获取客户端请求socket对象：阻塞方法
             Socket socket = server.accept();
             EXE.submit(new HttpTask(socket));
+
         }
     }
 }
